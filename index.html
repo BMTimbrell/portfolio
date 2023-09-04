@@ -7,13 +7,44 @@
     <body>
         <header>
             <h1>Ben Timbrell</h1>
-            <nav>
+            <nav class="desktop">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="projects.htm">Projects</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="mobile">
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="projects.htm"><li>Projects</li></a>
+                    <a href="contact.htm"><li>Contact</li></a>
                 </ul>
             </nav>
         </header>
+        <main>
+            <div class="content">
+                <h2>About Me</h2>
+                <p>Hi, my name is Ben Timbrell. I enjoy problem solving, which has led me to an interest in
+                    computer programming. I have a bachelor’s degree in Internet Computing from Aberystwyth University.
+                    This website is a place for me to share information about my <a href="projects.htm">projects</a>.
+                </p>
+                <hr>
+                <h2>Projects</h2>
+                <details>
+                    <summary><h3>Towers vs. Slimes</h3></summary>
+                    <a href="https://github.com/BMTimbrell/Towers-vs.-Slimes">
+                        <img  src="./resources/images/towers_vs_slimes.png" alt="Screenshot of the game">
+                    </a>
+                    <p>A tower defence game I made in Java using AWT.</p>
+                </details>
+                <details>
+                    <summary><h3>Running Club Webpage</h3></summary>
+                    <img  src="./resources/images/running_club.png" alt="Screenshot of the game">
+                    <p>A website for a fictional running club using responsive design.</p>
+                </details>
+                <p><a href="projects.htm">Click here</a> to see more projects</p>
+            </div>
+        </main>
     </body>
 </html>
