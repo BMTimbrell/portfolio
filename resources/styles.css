@@ -11,14 +11,19 @@ body {
     background-color: #9BA4B5;
 }
 
+header {
+    background-color: #212A3E;
+    color: #F1F6F9;
+}
+
 header h1 {
     display: inline-block;
     width: 30%;
     text-align: right;
 }
 
-header {
-    background-color: #212A3E;
+header h1 a {
+    text-decoration: none;
     color: #F1F6F9;
 }
 
