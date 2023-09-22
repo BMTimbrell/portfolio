@@ -154,15 +154,17 @@ details h3 {
         margin: 1.25rem auto;
         background-color: #394867;
         border: 1px solid #F1F6F9;
+        border-radius: 5px;
     }
 
     nav.mobile li:hover {
         background-color: #9BA4B5;
+        color: #394867;
     }
 
     nav.mobile li:active {
-        background-color: #9BA4B5;
-        color: #F1F6F9;
+        background-color: #F1F6F9;
+        color: #394867;
     }
 
     nav.mobile a {
