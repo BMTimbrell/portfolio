@@ -4,10 +4,7 @@ document.documentElement.style.setProperty('--scroll-padding', navigationHeight 
 const themeToggle = document.querySelector('.theme-toggle');
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-if (JSON.parse(window.localStorage.getItem('theme'))?.dark) {
-    themeToggle.src = './resources/images/light-bulb-off.png';
-    document.body.classList.toggle('dark', true);
-} else if (prefersDark) {
+if (JSON.parse(window.localStorage.getItem('theme'))?.dark || prefersDark) {
     themeToggle.src = './resources/images/light-bulb-off.png';
     document.body.classList.toggle('dark', true);
 } else {

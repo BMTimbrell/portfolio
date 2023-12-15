@@ -38,6 +38,7 @@ body.dark {
     --card-text-color: white;
     background-color: black;
     color: white;
+    --glow: 0;
 }
 
 img {
@@ -92,7 +93,7 @@ p {
     min-height: 4rem;
     margin-inline: auto;
     padding: 0.625rem 1.5rem;
-    padding-left: calc(var(--icon-width) + 1.25rem);
+    padding-left: calc(var(--icon-width) + 2rem);
     position: relative;
 }
 
@@ -139,11 +140,14 @@ p {
 
 .theme-toggle {
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 0.625rem;
+    left: 0.625rem;
     width: var(--icon-width);
     z-index: 10;
     cursor: pointer;
+    animation: theme-toggle-load 1s ease-out var(--content-load-delay);
+    transform: translateY(-200%);
+    animation-fill-mode: forwards;
 }
 
 /* main */
@@ -244,6 +248,16 @@ p {
 
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes theme-toggle-load {
+    0% {
+        transform: translateY(-200%);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
 
