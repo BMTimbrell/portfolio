@@ -26,6 +26,18 @@ body {
     --heading-load-delay: calc(var(--header-load-time) + var(--header__content-load-time));
     --content-load-delay: calc(var(--heading-load-delay) + 0.2s);
     --card-content-load-delay: calc(var(--content-load-delay) + 0.2s);
+    --icon-width: 1.5rem;
+    --header-background: #333;
+    --card-background: white;
+    --card-text-color: black;
+}
+
+body.dark {
+    --header-background: #696969;
+    --card-background: #696969;;
+    --card-text-color: white;
+    background-color: black;
+    color: white;
 }
 
 img {
@@ -64,7 +76,7 @@ p {
 /* header */
 
 .header {
-    background-color: #333;
+    background-color: var(--header-background);
     color: white;
     animation: header-load var(--header-load-time) ease-in;
     position: sticky;
@@ -80,6 +92,8 @@ p {
     min-height: 4rem;
     margin-inline: auto;
     padding: 0.625rem 1.5rem;
+    padding-left: calc(var(--icon-width) + 1.25rem);
+    position: relative;
 }
 
 .logo {
@@ -123,6 +137,15 @@ p {
     outline: none;
 }
 
+.theme-toggle {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: var(--icon-width);
+    z-index: 10;
+    cursor: pointer;
+}
+
 /* main */
 
 .main {
@@ -131,7 +154,8 @@ p {
 }
 
 .card {
-    background-color: white;
+    background-color: var(--card-background);
+    color: var(--card-text-color);
     padding: 0.25rem 1rem;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
     border-radius: 0.25rem;
