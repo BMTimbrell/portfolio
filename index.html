@@ -1,59 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Ben Timbrell</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet"> 
+
         <link rel="stylesheet" href="./resources/styles.css">
+        <script src="./resources/script.js" defer></script>
+        <title>Ben Timbrell</title>
     </head>
     <body>
-        <header>
-            <h1><a href="index.html">Ben Timbrell</a></h1>
-            <nav class="desktop">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.htm">Projects</a></li>
-                    <li><a href="contact.htm">Contact</a></li>
-                </ul>
-            </nav>
-            <nav class="mobile">
-                <ul>
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="projects.htm"><li>Projects</li></a>
-                    <a href="contact.htm"><li>Contact</li></a>
-                </ul>
-            </nav>
+        <header class="header">
+            <div class="header__content">
+                <a class="logo" href="index.html">Ben Timbrell</a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#about">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="contact.htm">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <main>
-            <div class="content">
-                <h2>About Me</h2>
-                <p>Hi, my name is Ben Timbrell. I enjoy problem solving, which has led me to an interest in
-                    computer programming. I have a bachelor’s degree in Internet Computing from Aberystwyth University.
-                    This website is a place for me to share information about my <a href="projects.htm">projects</a>.
-                </p>
-                <hr>
-                <h2>Projects</h2>
-                <details>
-                    <summary><h3>Towers vs. Slimes</h3></summary>
-                    <a href="https://github.com/BMTimbrell/Towers-vs.-Slimes">
-                        <img  src="./resources/images/towers_vs_slimes.png" alt="Screenshot of the game">
-                    </a>
-                    <p>A tower defence game I made in Java using AWT.</p>
-                </details>
-                <details>
-                    <summary><h3>Reddit Minimal</h3></summary>
-                    <a href="https://github.com/BMTimbrell/reddit_minimal">
-                        <img  src="./resources/images/reddit_minimal.png" alt="Screenshot of Reddit Minimal app">
-                    </a>
-                    <p>A Reddit client app made using React and Redux.</p>
-                </details>
-                <details>
-                    <summary><h3>Jammming</h3></summary>
-                    <a href="https://github.com/BMTimbrell/jammming">
-                        <img  src="./resources/images/jammming.png" alt="Screenshot of Jammming app">
-                    </a>
-                    <p>A web app that uses the Spotify API, made using React.</p>
-                </details>
-                <p><a href="projects.htm">Click here</a> to see more projects.</p>
+        <main class="main">
+            <div class="main__content">
+                <section id="about">
+                    <article>
+                        <h2>About Me</h2>
+                        <p>
+                            Hi, my name is Ben Timbrell. I enjoy problem solving, which has led me to an interest in
+                            computer programming. 
+                        </p>
+                        <p>
+                            I have a bachelor’s degree in Internet Computing from Aberystwyth University.
+                            This website is a place for me to share information about my projects.
+                        </p>
+                    </article>
+                </section>
+
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <div class="card-grid">
+                        <div class="card">
+                            <div class="card__header">
+                                <h3>Towers vs. Slimes</h3>
+                            </div>
+                            <div class="card__body">
+                                <a href="https://github.com/BMTimbrell/Towers-vs.-Slimes">
+                                    <img  
+                                        src="./resources/images/towers_vs_slimes.png" 
+                                        alt="A game where towers are shooting at innocent slime monsters"
+                                    >
+                                </a>
+                                <p>
+                                    A tower defence game I made in Java using AWT. You can buy and sell towers, as well as purchase upgrades. 
+                                    As you clear waves, you face you new enemies with unique attributes.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__header">
+                                <h3>Weight Tracker</h3>
+                            </div>
+                            <div class="card__body">
+                                <a href="https://github.com/BMTimbrell/weight-tracker-frontend">
+                                    <img  
+                                        src="./resources/images/weight-tracker.png" 
+                                        alt="A website with a graph showing someone's weight and the date the weight was submitted, 
+                                        as well as filters for displaying data based on month and year, and an option for choosing kg or lbs"
+                                    >
+                                </a>
+                                <p>
+                                    An online weight tracker made in React that connects to an express server. It saves user preferences in 
+                                    local storage such as their preferred unit of measurement, as well as filters and site theme.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__header">
+                                <h3>Splendid Shoes</h3>
+                            </div>
+                            <div class="card__body">
+                                <a href="https://github.com/BMTimbrell/e-commerce-app">
+                                    <img  
+                                        src="./resources/images/splendid_shoes.png" 
+                                        alt="A shoe shop with filters for categories and gender"
+                                    >
+                                </a>
+                                <p>
+                                    A mock-up of an online shoe store made in React that connects to an express server. You can add shoes to 
+                                    a shopping cart, as well as make a purchase. You can view your order history on the profile page.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__header">
+                                <h3>Reddit Minimal</h3>
+                            </div>
+                            <div class="card__body">
+                                <a href="https://github.com/BMTimbrell/reddit_minimal">
+                                    <img  
+                                        src="./resources/images/reddit_minimal.png" 
+                                        alt="A website showing reddit posts, and a section for selecting subreddits"
+                                    >
+                                </a>
+                                <p>
+                                    A Reddit client app made using React and Redux. You can filter posts by selecting or typing the 
+                                    name of a subreddit, as well as typing keywords.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__header">
+                                <h3>Jammming</h3>
+                            </div>
+                            <div class="card__body">
+                                <a href="https://github.com/BMTimbrell/jammming">
+                                    <img  
+                                        src="./resources/images/jammming.png" 
+                                        alt="A website with a search bar for finding songs on Spotify and a 
+                                        results section with buttons for adding songs to a playlist section"
+                                    >
+                                </a>
+                                <p>
+                                    A web app that uses the Spotify API, made using React. You can search for songs on spotify 
+                                    and add them to a playlist.
+                                </p>
+                            </div>
+                        </div>
+                    </div> 
+                </section>
             </div>
         </main>
     </body>

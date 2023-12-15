@@ -1,37 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Ben Timbrell</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet"> 
+
         <link rel="stylesheet" href="./resources/styles.css">
+        <title>Ben Timbrell</title>
     </head>
     <body>
-        <header>
-            <h1><a href="index.html">Ben Timbrell</a></h1>
-            <nav class="desktop">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.htm">Projects</a></li>
-                    <li><a href="contact.htm">Contact</a></li>
-                </ul>
-            </nav>
-            <nav class="mobile">
-                <ul>
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="projects.htm"><li>Projects</li></a>
-                    <a href="contact.htm"><li>Contact</li></a>
-                </ul>
-            </nav>
+        <header class="header">
+            <div class="header__content">
+                <a class="logo" href="index.html">Ben Timbrell</a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html#about">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html#projects">Projects</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="contact.htm">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <main>
-            <div class="content">
+        <main class="main">
+            <div class="main__content">
                 <h2>Contact</h2>
-                <br>
                 <h3>Email</h3>
-                <p>You can email me at <a href="mailto:bmtimbrell@gmail.com">bmtimbrell@gmail.com</a>.</p>
-                <br>
+                <p>You can email me at <a class="link" href="mailto:bmtimbrell@gmail.com">bmtimbrell@gmail.com</a>.</p>
                 <h3>Github</h3>
-                <p>Feel free to check out my <a href="https://github.com/BMTimbrell">github</a>.</p>
+                <p>Feel free to check out my <a class="link" href="https://github.com/BMTimbrell">github</a>.</p>
             </div>
         </main>
     </body>
