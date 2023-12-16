@@ -157,6 +157,19 @@ p {
     padding-top: 0;
 }
 
+.content-grid {
+    display: grid;
+    grid-template-columns: [breakout-start] 20% [content-start] 1fr [content-end] 20% [breakout-end];
+}
+
+.content-grid > * {
+    grid-column: content;
+}
+
+.content-grid > .breakout {
+    grid-column: breakout;
+}
+
 .card {
     background-color: var(--card-background);
     color: var(--card-text-color);
@@ -278,6 +291,10 @@ p {
         flex-direction: column;
         row-gap: 0.5rem;
         padding-inline: 0;
+    }
+
+    .content-grid {
+        grid-template-columns: [breakout-start] 0 [content-start] 1fr [content-end] 0 [breakout-end];
     }
 }
 
