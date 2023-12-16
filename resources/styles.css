@@ -277,6 +277,7 @@ p {
     .header__content {
         flex-direction: column;
         row-gap: 0.5rem;
+        padding-inline: 0;
     }
 }
 
