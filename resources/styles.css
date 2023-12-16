@@ -146,10 +146,10 @@ p {
     width: var(--icon-width);
     z-index: 10;
     cursor: pointer;
+    filter: drop-shadow(var(--glow));
     animation: theme-toggle-load 1s ease-out var(--content-load-delay);
     transform: translateY(-200%);
     animation-fill-mode: forwards;
-    filter: drop-shadow(var(--glow));
 }
 
 /* main */
