@@ -30,6 +30,7 @@ body {
     --header-background: #333;
     --card-background: white;
     --card-text-color: black;
+    --glow: 0 0 0.625rem #ffd400;
 }
 
 body.dark {
@@ -148,6 +149,7 @@ p {
     animation: theme-toggle-load 1s ease-out var(--content-load-delay);
     transform: translateY(-200%);
     animation-fill-mode: forwards;
+    filter: drop-shadow(var(--glow));
 }
 
 /* main */
