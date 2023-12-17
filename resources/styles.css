@@ -273,7 +273,6 @@ p {
 
     100% {
         transform: translateY(0);
-        -webkit-transform: translateZ(0);
     }
 }
 
