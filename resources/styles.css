@@ -47,8 +47,6 @@ img {
     height: auto;
     vertical-align: middle;
     font-style: italic;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 h2 {
@@ -75,7 +73,7 @@ p {
     opacity: 0;
 }
 
-/* header */
+/* Header */
 
 .header {
     background-color: var(--header-background);
@@ -152,7 +150,7 @@ p {
     animation-fill-mode: forwards;
 }
 
-/* main */
+/* Main */
 
 .main {
     padding: 1.875rem;
@@ -228,6 +226,8 @@ p {
     text-decoration: underline;
 }
 
+/* Animations */
+
 @keyframes header-load {
     0% {
         transform: translateY(-100%);
@@ -273,6 +273,7 @@ p {
 
     100% {
         transform: translateY(0);
+        -webkit-transform: translateZ(0);
     }
 }
 
@@ -287,6 +288,8 @@ p {
         opacity: 1;
     }
 }
+
+/* Media Queries */
 
 @media (max-width: 40.625em) {
     .header__content {
